@@ -2,6 +2,10 @@
 
 using namespace std;
 
+// Vemos que en el espacio N_m se define n^k % m como f(n, k) = (n*f(n,k-1))%m si k es impar
+//                                                              f(n,k/2)^2 %m  si k es par
+//                                                              1              si k es 0
+
 int mod_exp(int n, int k, int m)
 {
     if (k == 0) return 1;
